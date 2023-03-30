@@ -1,0 +1,603 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains", monospace;
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+@font-face {
+  font-family: "JetBrains";
+  src: url(../public/fonts/JetBrainsMono-MediumItalic.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains";
+  src: url(../public/fonts/JetBrainsMonoNL-ExtraBoldItalic.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.white-gradient {
+  background: #ffffff;
+  background: linear-gradient(-90deg, #ffffff 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
+      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff,
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff,
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+.square::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  left: -15px;
+  /* background-color: red; */
+  width: 6px;
+  height: 6px;
+  transition: all 0.5s;
+}
+.stroke-text:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+/* arrow */
+.logo {
+  width: 200px;
+  height: 200px;
+  align-self: end;
+  animation: slideInFromTop 1.5s ease-in-out infinite alternate;
+}
+.first {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  clip-path: polygon(0 10%, 70% 110%, 35% 90%, 0 50%);
+}
+.second {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  clip-path: polygon(110% 10%, 90% 50%, 88% 55%, 45% 85%);
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-1%);
+    /* opacity: 0.5; */
+  }
+  100% {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}
+/* BTN WHITE */
+/* cambiar width */
+.button-w {
+  font-weight: 400;
+  width: 160px;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  /* cambiar altura */
+  line-height: 2.5rem;
+  padding: 0.3rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.button-w:hover {
+  color: white;
+}
+
+.button-w::before,
+.button-w::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid white;
+  left: 0;
+}
+
+.button-w::before {
+  border-bottom: 0;
+  top: 0;
+}
+
+.button-w::after {
+  border-top: 0;
+  bottom: 0;
+}
+
+/* LABEL  */
+/* cambiar altura aca */
+.label-w {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label-w:before {
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* Hover Effect */
+.hover-effect-w {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  z-index: 1;
+  /* CAMBIAR COLOR DEL HOVER */
+  background-color: black;
+  transform: translateX(-100%) skew(-10deg);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.button-w:hover .hover-effect-w {
+  transform: translateX(0) skew(-10deg);
+}
+
+/* Label Text */
+.label-text-w {
+  position: relative;
+  display: block;
+  /* padding: 1.9rem 3rem; */
+  background-color: transparent;
+  z-index: 1;
+}
+
+.label-text-w:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.4rem;
+  width: 0.4rem;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: background-color 0.2s ease-in;
+}
+.button-w:hover .label-text-w:after {
+  background-color: white;
+}
+.primary-w {
+  color: black;
+}
+.primary-w .label-w::before {
+  background-color: white;
+}
+
+/* BTN BLACK */
+/* cambiar width */
+.button-b {
+  font-weight: 400;
+  width: 160px;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  /* cambiar altura */
+  line-height: 2.5rem;
+  padding: 0.3rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: BLACK;
+}
+
+.button-b:hover {
+  color: black;
+}
+
+.button-b::before,
+.button-b::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid black;
+  left: 0;
+}
+
+.button-b::before {
+  border-bottom: 0;
+  top: 0;
+}
+
+.button-b::after {
+  border-top: 0;
+  bottom: 0;
+}
+
+/* LABEL  */
+/* cambiar altura aca */
+.label-b {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label-b:before {
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* Hover Effect */
+.hover-effect-b {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  z-index: 1;
+  /* CAMBIAR COLOR DEL HOVER */
+  background-color: white;
+  transform: translateX(-100%) skew(-10deg);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.button-b:hover .hover-effect-b {
+  transform: translateX(0) skew(-10deg);
+}
+
+/* Label Text */
+.label-text-b {
+  position: relative;
+  display: block;
+  /* padding: 1.9rem 3rem; */
+  background-color: transparent;
+  z-index: 1;
+}
+
+.label-text-b:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.4rem;
+  width: 0.4rem;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: background-color 0.2s ease-in;
+}
+.button-b:hover .label-text-b:after {
+  background-color: black;
+}
+.primary-b {
+  color: white;
+}
+.primary-b .label-b::before {
+  background-color: black;
+}
+/* BTN WHITE CON HOVER DE COLOR */
+/* cambiar width */
+.button {
+  font-weight: 400;
+  width: 160px;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  /* cambiar altura */
+  line-height: 2.5rem;
+  padding: 0.3rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  color: white;
+}
+
+.button::before,
+.button::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid white;
+  left: 0;
+}
+
+.button::before {
+  border-bottom: 0;
+  top: 0;
+}
+
+.button::after {
+  border-top: 0;
+  bottom: 0;
+}
+
+/* LABEL  */
+/* cambiar altura aca */
+.label {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label:before {
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* Hover Effect */
+.hover-effect {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  z-index: 1;
+
+  /* CAMBIAR COLOR DEL HOVER */
+  background-color: #4801ff;
+  transform: translateX(-100%) skew(-10deg);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.button:hover .hover-effect {
+  transform: translateX(0) skew(-10deg);
+}
+
+/* Label Text */
+.label-text {
+  position: relative;
+  display: block;
+  /* padding: 1.9rem 3rem; */
+  background-color: transparent;
+  z-index: 1;
+}
+
+.label-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.4rem;
+  width: 0.4rem;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: background-color 0.2s ease-in;
+}
+.button:hover .label-text:after {
+  background-color: white;
+}
+.primary {
+  color: black;
+}
+.primary .label::before {
+  background-color: white;
+}
