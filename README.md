@@ -6,7 +6,7 @@ I invite you to explore this portfolio to gain valuable insights into my approac
 ## Technologies
 
 - Javascript
-- Reac
+- React
 - Tailwind
 - React-Router
 - Redux
