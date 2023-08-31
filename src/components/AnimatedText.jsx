@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-const AnimatedText = ({ infinite, textContent, speed = 30, delay = 2000 }) => {
+const AnimatedText = ({
+  infinite = false,
+  textContent,
+  speed = 30,
+  delay = 2000,
+}) => {
   const textSaved = textContent;
   const [times, setTimes] = useState(0);
   const [text, setText] = useState(textSaved);

@@ -4,6 +4,18 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        markpro: ["Mark Pro"],
+        dinw05: ["DINNextLTW05"],
+        dinw05Bold: ["DINNextLTW05Bold"],
+        tungstenBold: ["Tungsten-Bold"],
+        dinw1g: ["DIN Next W1G"],
+        ffmark: ["MarkSCOffcW05"],
+        jetBrains: ["JetBrains"],
+      },
+      transitionTimingFunction: {
+        customTransition: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      },
       colors: {
         primary: "#ffffff",
         secondary: "#000000",

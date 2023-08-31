@@ -32,7 +32,11 @@ const HoverAnimation = ({ textC }) => {
     }, 30);
   };
   return (
-    <p onMouseOver={handleAnimation} data-my-value={textC}>
+    <p
+      onMouseOver={handleAnimation}
+      data-my-value={textC}
+      className="font-jetBrains leading-[50px]"
+    >
       {textC}
     </p>
   );
