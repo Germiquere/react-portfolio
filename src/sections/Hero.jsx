@@ -6,6 +6,7 @@ import { Background } from "../components/section-hero/Background";
 import { CornerCut } from "../components/section-hero/CornerCut";
 import HoverAnimation from "../components/HoverAnimation";
 import { motion } from "framer-motion";
+import { AboutImg } from "../components/section-about/AboutImg";
 export const Hero = () => {
     return (
         <Section>
@@ -40,24 +41,24 @@ export const Hero = () => {
                         animate={{ opacity: ["0%", "100%"] }}
                         transition={{ duration: 1.5 }}
                     >
-                        <h1 className="absolute bottom-[17.4vw] left-[22.2vw] text-[13.05vw] font-tungstenBold  cursor-default">
+                        <h1 className="absolute bottom-[17.4vw] left-[22.2vw] text-[9vw] font-tungstenBold  cursor-default font-bold">
                             <span className=" text-[1.1rem] font-mono font-bold hidden lg:inline ">
                                 01I
                             </span>
-                            <span className="stroke-text">INNOVATIVE.</span>
+                            <span className="stroke-text ">INNOVATIVE</span>
                         </h1>
-                        <h1 className="absolute bottom-[7.7vw] left-[29.6vw] text-[13.05vw] font-tungstenBold  cursor-default">
+                        <h2 className="absolute bottom-[7.7vw] left-[29.6vw] text-[9vw] font-tungstenBold  cursor-default font-bold">
                             <span className=" text-[1.1rem] font-mono font-bold hidden lg:inline ">
                                 02F
                             </span>
-                            <span className="stroke-text">FUN.</span>
-                        </h1>
-                        <h1 className="absolute bottom-[-2vw] left-[5vw] text-[13.05vw] font-tungstenBold  cursor-default">
+                            <span className="stroke-text">FUN</span>
+                        </h2>
+                        <h2 className="absolute bottom-[-2vw] left-[5vw] text-[9vw] font-tungstenBold  cursor-default font-bold">
                             <span className=" text-[1.1rem] font-mono font-bold hidden lg:inline ">
                                 03I
                             </span>
-                            <span className="stroke-text">INTERACTIVE.</span>
-                        </h1>
+                            <span className="stroke-text">INTERACTIVE</span>
+                        </h2>
                     </motion.div>
 
                     {/* BTN CONTAINER */}

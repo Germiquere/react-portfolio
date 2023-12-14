@@ -2,104 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Mark Pro";
-  src: url(./assets/fonts/markpro/MarkPro-Bold.ttf);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DINNextLTW05";
-  src: url(./assets/fonts/dinnextltw05/DINNextLTW05-Medium.ttf);
-
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DINNextLTW05Bold";
-  src: url(./assets/fonts/dinnextltw05/DINNextLTW05-Bold.ttf);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Tungsten-Bold";
-  src: url(./assets/fonts/tungsten/Tungsten-Bold.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DIN Next W1G";
-  src: url(./assets/fonts/dinnextw1g/DINNextW1G.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MarkSCOffcW05";
-  src: url(./assets/fonts/ffmark/MarkSCOffcW05-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "JetBrains";
-  src: url(./assets/fonts/jetbrains/JetBrainsMono-MediumItalic.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  background-color: white;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "JetBrains Mono", monospace;
 }
 .active {
-  color: red;
-  padding: 1rem;
-  border-radius: 100%;
-  position: relative;
+    color: red;
+    padding: 1rem;
+    border-radius: 100%;
+    position: relative;
 }
 .square::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 4px);
-  left: -10px;
-  background-color: red;
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: -10px;
+    background-color: red;
 
-  width: 5px;
-  height: 5px;
-  transition: all 0.5s;
+    width: 5px;
+    height: 5px;
+    transition: all 0.5s;
 }
 .main-square::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 3px);
-  left: -10px;
-  background-color: black;
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: -10px;
+    background-color: black;
 
-  width: 6px;
-  height: 6px;
-  transition: all 0.5s;
+    width: 6px;
+    height: 6px;
+    transition: all 0.5s;
 }
 
 .stroke-text:hover {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 button {
-  transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 /* .borderMark {
   position: relative;
@@ -108,55 +53,55 @@ button {
   overflow: hidden;
 } */
 .borderMark::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 17px;
-  width: 100%;
-  height: 2px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-  /* transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 17px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+    /* transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); */
 }
 
 .borderMark:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+    transform: scaleX(1);
+    transform-origin: left;
 }
 /* arrow */
 .logo {
-  width: 200px;
-  height: 200px;
-  align-self: end;
-  animation: slideInFromTop 1.5s ease-in-out infinite alternate;
+    width: 200px;
+    height: 200px;
+    align-self: end;
+    animation: slideInFromTop 1.5s ease-in-out infinite alternate;
 }
 .first {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  clip-path: polygon(0 10%, 70% 110%, 35% 90%, 0 50%);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    clip-path: polygon(0 10%, 70% 110%, 35% 90%, 0 50%);
 }
 .second {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  clip-path: polygon(110% 10%, 90% 50%, 88% 55%, 45% 85%);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    clip-path: polygon(110% 10%, 90% 50%, 88% 55%, 45% 85%);
 }
 @keyframes slideInFromTop {
-  0% {
-    transform: translateY(-1%);
-    /* opacity: 0.5; */
-  }
-  100% {
-    transform: translateY(0);
-    /* opacity: 1; */
-  }
+    0% {
+        transform: translateY(-1%);
+        /* opacity: 0.5; */
+    }
+    100% {
+        transform: translateY(0);
+        /* opacity: 1; */
+    }
 }
 .clip-path-top-right {
-  clip-path: polygon(0 0, 88% 0, 100% 18%, 100% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 88% 0, 100% 18%, 100% 100%, 0 100%, 0% 50%);
 }
 /* #wan:hover #tu {
   background-color: red;

@@ -13,27 +13,27 @@ const data = [
         description:
             "PRESENTING A ROBUST AND SOPHISTICATED APPLICATION DESIGNED FOR EFFICIENT PRODUCT MANAGEMENT, STOCK CONTROL, AND SALES TRACKING. THIS METICULOUSLY CRAFTED APP EXEMPLIFIES MY EXPERTISE IN SOFTWARE DEVELOPMENT, WITH A FOCUS ON CREATING STREAMLINED SOLUTIONS TO ENHANCE BUSINESS OPERATIONS. AS YOU DELVE INTO THE FUNCTIONALITIES OF THIS APPLICATION, YOU WILL WITNESS MY PROFICIENCY IN IMPLEMENTING CUTTING-EDGE FEATURES AND INTUITIVE USER INTERFACES.",
         photo: ninnaImage,
-        demo: "https://ninnaapp.netlify.app",
+        demo: "https://ninna-app.vercel.app",
         code: "https://github.com/Germiquere/NinnaApp",
         tech: ["REACT", "MATERIAL UI", "FIREBASE", "REDUX"],
     },
-    {
-        id: "002",
-        title: "CRUD APP",
-        description:
-            "THIS PROJECT AIMS TO PROVIDE USERS WITH AN EASY AND ENGAGING APPLICATION THAT ALLOWS THEM TO CREATE, READ, UPDATE, AND DELETE TASKS. IN ADDITION, USERS CAN CREATE AN ACCOUNT AND LOG IN FOR A PERSONALIZED EXPERIENCE. FURTHERMORE, THE APP GRANTS ACCESS TO THE MAIN FEATURES IF THE USER HAS ALREADY LOGGED IN BY USING A TOKEN STORED IN LOCAL STORAGE.",
-        photo: crudApp,
-        demo: "https://crud-to-do-app.netlify.app/",
-        code: "https://github.com/Germiquere/My-Portfolio",
-        tech: ["HTML", "CSS", "JAVASCRIPT"],
-    },
+    // {
+    //     id: "002",
+    //     title: "CRUD APP",
+    //     description:
+    //         "THIS PROJECT AIMS TO PROVIDE USERS WITH AN EASY AND ENGAGING APPLICATION THAT ALLOWS THEM TO CREATE, READ, UPDATE, AND DELETE TASKS. IN ADDITION, USERS CAN CREATE AN ACCOUNT AND LOG IN FOR A PERSONALIZED EXPERIENCE. FURTHERMORE, THE APP GRANTS ACCESS TO THE MAIN FEATURES IF THE USER HAS ALREADY LOGGED IN BY USING A TOKEN STORED IN LOCAL STORAGE.",
+    //     photo: crudApp,
+    //     demo: "https://crud-to-do-app.netlify.app/",
+    //     code: "https://github.com/Germiquere/My-Portfolio",
+    //     tech: ["HTML", "CSS", "JAVASCRIPT"],
+    // },
     {
         id: "003",
         title: "INFINITE SCROLL",
         description:
             "I HAVE DEVELOPED A COMPACT APPLICATION THAT COMBINES THE INTERSECTION OBSERVER API WITH THE DUMMYJSON API TO CREATE AN EFFECTIVE LAZY LOADING IMPLEMENTATION. THIS PROJECT SHOWCASES MY SKILLS IN WEB DEVELOPMENT AND API INTEGRATION.",
         photo: InfiniteScroll,
-        demo: "https://lazyl0ading.netlify.app/",
+        demo: "https://infinite-scroll-mauve-phi.vercel.app",
         code: "https://github.com/Germiquere/InfiniteScroll",
         tech: ["REACT", "INTERSECTION OBSERVER API", "DUMMYJSON API"],
     },
