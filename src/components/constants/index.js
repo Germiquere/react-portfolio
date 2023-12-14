@@ -44,7 +44,7 @@ const data = [
         description:
             "I'M WORKING ON THIS PROJECT USING REACT AND MATERIAL UI.DESPITE THIS IS STILL IN PROGRESSS, I AM LEARNING A LOT ABOUT THESE FRAMEWORKS AND LIBRARIES.",
         photo: keepImage,
-        demo: "https://gkeepclone1.netlify.app/",
+        demo: "https://google-keep-clone-pearl.vercel.app/",
         code: "https://github.com/Germiquere/googleKeepClone",
         tech: ["HTML", "CSS", "REACT", "MATERIAL UI"],
     },
@@ -75,8 +75,8 @@ const data = [
         description:
             "THE MAIN PURPOSE OF THIS IS TO CREATE A NEW PORTFOLIO WITH THE NEW FRAMEWORKS AND LIBRARIES I HAVE BEEN LEARNING SO FAR. THIS PARTICULAR PORTFOLIO IS INSPIRED BY A WEB OF A VIDEO GAME I LOVE SO MUCH,VALORANT.",
         photo: portfolioReact,
-        demo: "https://ger-miquere-portfolio.netlify.app/",
-        code: "https://github.com/Germiquere/My-Portfolio",
+        demo: "https://germiquere-portfolio.vercel.app/",
+        code: "https://github.com/Germiquere/react-portfolio/tree/main",
         tech: ["HTML", "CSS", "REACT", "TAILWIND CSS"],
     },
 
