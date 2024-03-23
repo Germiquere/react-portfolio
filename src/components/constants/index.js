@@ -2,10 +2,12 @@ import image from "../section-works/proyect-img/portfolio.png";
 import keepImage from "../section-works/proyect-img/gkeep.png";
 import petImage from "../section-works/proyect-img/pet-shop.png";
 import manageImage from "../section-works/proyect-img/manage.png";
-import crudApp from "../section-works/proyect-img/todo-app-crud.png";
+// import crudApp from "../section-works/proyect-img/todo-app-crud.png";
 import portfolioReact from "../section-works/proyect-img/portfolioReact.png";
 import ninnaImage from "../section-works/proyect-img/NinnaApp.png";
 import InfiniteScroll from "../section-works/proyect-img/InfiniteScroll.png";
+import bikeMeNow from "../section-works/proyect-img/bikemenow.png";
+
 const data = [
     {
         id: "001",
@@ -17,16 +19,16 @@ const data = [
         code: "https://github.com/Germiquere/NinnaApp",
         tech: ["REACT", "MATERIAL UI", "FIREBASE", "REDUX"],
     },
-    // {
-    //     id: "002",
-    //     title: "CRUD APP",
-    //     description:
-    //         "THIS PROJECT AIMS TO PROVIDE USERS WITH AN EASY AND ENGAGING APPLICATION THAT ALLOWS THEM TO CREATE, READ, UPDATE, AND DELETE TASKS. IN ADDITION, USERS CAN CREATE AN ACCOUNT AND LOG IN FOR A PERSONALIZED EXPERIENCE. FURTHERMORE, THE APP GRANTS ACCESS TO THE MAIN FEATURES IF THE USER HAS ALREADY LOGGED IN BY USING A TOKEN STORED IN LOCAL STORAGE.",
-    //     photo: crudApp,
-    //     demo: "https://crud-to-do-app.netlify.app/",
-    //     code: "https://github.com/Germiquere/My-Portfolio",
-    //     tech: ["HTML", "CSS", "JAVASCRIPT"],
-    // },
+    {
+        id: "002",
+        title: "BIKEMENOW",
+        description:
+            "INTRODUCING: BIKEMENOW! A BOOKING CAPSTONE PROJECT AT DIGITAL HOUSE THAT ALLOWS REGISTERED USERS TO EASILY, QUICKLY, AND SEAMLESSLY RESERVE A BICYCLE. ADDITIONALLY, FOR USERS WHO ARE ADMINISTRATORS, THEY ARE ALLOWED TO CREATE, EDIT, AND DELETE PRODUCTS, CATEGORIES, AND COMPANY POLICIES. FOR CATEGORIES AND PRODUCTS, THEY CAN UPLOAD IMAGES THAT ARE STORAGE USING AWS S3.",
+        photo: bikeMeNow,
+        demo: "https://proyecto-integrador-booking-app.vercel.app/",
+        code: "https://github.com/Germiquere/ProyectoIntegrador-BookingApp",
+        tech: ["JAVA", "AWS", "MYSQL", "REACT", "TAILWIND CSS"],
+    },
     {
         id: "003",
         title: "INFINITE SCROLL",
